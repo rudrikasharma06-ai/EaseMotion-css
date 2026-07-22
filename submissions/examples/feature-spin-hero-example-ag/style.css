@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f6fa;
+}
+
+.spin-hero-example-ag{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.spin-card-ag{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:360px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    transition:transform .6s ease;
+}
+
+.spin-card-ag:hover{
+    transform:rotate(360deg);
+}
+
+.error-icon-ag{
+    font-size:60px;
+    color:#e63946;
+    margin-bottom:20px;
+}
+
+h1{
+    margin-bottom:15px;
+}
+
+p{
+    color:#666;
+    margin-bottom:25px;
+    line-height:1.5;
+}
+
+.retry-btn-ag{
+    border:none;
+    padding:12px 28px;
+    border-radius:8px;
+    cursor:pointer;
+    background:#e63946;
+    color:white;
+    transition:.3s;
+}
+
+.retry-btn-ag:hover{
+    background:#c91d2d;
+}
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+        animation:none !important;
+        transition:none !important;
+    }
+
+    .spin-card-ag:hover{
+        transform:none;
+    }
+
+}
